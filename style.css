@@ -16,12 +16,14 @@ background-color: rgb(233, 230, 230);}
     font-size: 5rem;
 
 }
-
+/*****HEADERS******/
 header {display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+}
 
 nav{display: flex;
     padding: 20px;
+    flex-wrap: wrap;
 }
 nav li {list-style: none;
 padding: 5px;
@@ -29,11 +31,60 @@ margin: 5px;
 cursor: pointer;
 color: rgb(7, 7, 99);
 font-weight:500;
+text-decoration: none;
+}
+nav a {
+    text-decoration: none;
 }
 nav li:hover{text-decoration: underline;
 cursor: pointer;
 color: rgb(233, 60, 7);
 font-size: larger;
 transition: 1s;}
-h1 {color:rgb(7, 7, 99) ;}
-h1 span{color:rgb(233, 60, 7)}
+.name {color:rgb(7, 7, 99) ;}
+.name span{color:rgb(233, 60, 7)}
+
+/*****HOME PAGE****/
+
+.front{
+ 
+    height: 550px;
+    width: 100%;
+    margin-top: 0;
+    background-color:rgb(7, 7, 99) ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.front img {
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.5;
+}
+.front .front-page{
+    color: aquamarine;
+    width: 700px;
+}
+.front .front-page h1{color: rgb(233, 60, 7);}
+.front .front-page p{color: rgb(233, 230, 230);
+    padding-top: 80px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size:larger;
+}
+.front .front-page button{
+    margin-left: 250px;
+    margin-top: 50px ;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 15%;
+    cursor: pointer;
+color: rgb(7, 7, 99);}
+
+.front .front-page button:hover {
+    color:rgb(233, 60, 7);
+    background-color: rgb(31, 19, 19);
+    transition: 1s;
+
+}
