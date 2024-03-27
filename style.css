@@ -25,6 +25,9 @@ nav{display: flex;
     padding: 20px;
     flex-wrap: wrap;
 }
+ .fa {
+     display: none;
+ }
 nav li {list-style: none;
 padding: 5px;
 margin: 5px;
@@ -257,6 +260,9 @@ hr {
 
 
 @media (max-width: 1341px){
+    .fa {
+            display: none;
+        }
 
     .front {
     
@@ -287,6 +293,7 @@ hr {
         }
     
         .front .front-page h1 {
+            font-size: medium;
             color: rgb(233, 60, 7);
         }
     
@@ -320,6 +327,10 @@ hr {
 
 @media (max-width: 929px) {
 
+    .fa {
+        display: none;
+    }
+
     .front {
 
         height: 700px;
@@ -331,6 +342,7 @@ hr {
         justify-content: space-between;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        text-align: center;
     }
 
     .front img {
@@ -357,16 +369,17 @@ hr {
     .front .front-page p {
         color: rgb(233, 230, 230);
         padding-top: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
         font-size: large;
         text-align: center;
         width: 100%;
     }
 
     .front .front-page button {
-        margin-left: 400px;
+        margin-left: 50px;
         margin-top: 25px;
+        margin-bottom: 100px;
         padding: 5px;
         font-size: large;
         font-weight: 600;
@@ -440,32 +453,38 @@ hr {
     }
 
     header .name {
-        font-size: x-large;
-       
+        font-size: large;   
     }
 
-    header nav {
-        display: none;
-    
+    .nav-links  {
+        position: fixed;
+        background: rgb(233, 230, 230);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s; 
     }
 
-    .checkbtn {
-            font-size: 30px;
-            color: rgb(7, 7, 99);
-            line-height: 60px;
-            cursor: pointer;
-            margin-right: 0px;
-            display:inline;
-            margin-left: 20px;
-        }
-    
-    #check {
-            display: inline;
-            margin-bottom: 50px;
-        }
-
+    header .fa {
+        display: block;
+        color: rgb(7, 7, 99);
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 
     
+
+    nav a li {
+        padding: 10px;
+        font-weight: 550;
+        font-size: small;
+    }
+
     .name {
         color: rgb(7, 7, 99);
     }
@@ -476,7 +495,7 @@ hr {
 
     .front {
 
-        height: 100px;
+        height: 150vh;
         width: 100%;
         margin-top: 20px;
         background-color: rgb(7, 7, 99);
@@ -485,26 +504,24 @@ hr {
         justify-content: space-between;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        border-bottom-left-radius: 180px;
+        text-align: center;
     }
 
     .front img {
         border-radius: 20px;
         margin: 0px;
         opacity: 0.5;
-        height: 300px;
+        height: 350px;
         width: 100%;
         padding: 5px;
 
     }
 
-    .front .front-page {
-        color: aquamarine;
-        width: 100%;
-    }
-
     .front .front-page h1 {
         color: rgb(233, 60, 7);
         text-align: center;
+        font-size: medium;
     }
 
     .front .front-page p {
@@ -512,16 +529,16 @@ hr {
         padding-top: 10px;
         padding-right: 10px;
         padding-left: 10px;
-        font-size: larger;
         text-align: center;
         width: 100%;
+        font-size:large;
     }
 
     .front .front-page button {
-        margin-left: 400px;
+        margin-left: 40px;
         margin-top: 25px;
         padding: 5px;
-        font-size: large;
+        font-size: medium;
         font-weight: 600;
         border-radius: 15%;
         cursor: pointer;
@@ -556,6 +573,163 @@ hr {
 
     .row {
         width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .col {
+        flex-basis: 25%;
+        padding: 15px;
+    }
+
+    .social-icons .fa-brands {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-size: 20px;
+        color: #000;
+        background: #fff;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .link {
+        margin-left: 45%
+    }
+
+}
+
+@media (max-width: 645px) {
+    header {
+        display: flex;
+
+    }
+
+    header .name {
+        font-size: large;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: rgb(233, 230, 230);
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    header .fa {
+        display: block;
+        color: rgb(7, 7, 99);
+        margin-right: 50px;
+        margin-left: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+
+
+    nav a li {
+        padding: 10px;
+        font-weight: 550;
+        font-size: small;
+    }
+
+    .name {
+        color: rgb(7, 7, 99);
+    }
+
+    .name span {
+        color: rgb(233, 60, 7)
+    }
+
+    .front {
+        height: 150vh;
+        width: 100vw;
+        margin-top: 20px;
+        background-color: rgb(7, 7, 99);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 180px;
+        text-align: center;
+    }
+
+    .front img {
+        border-radius: 20px;
+        margin: 0px;
+        opacity: 0.5;
+        height: 300px;
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .front .front-page h1 {
+        color: rgb(233, 60, 7);
+        text-align: center;
+        font-size: medium;
+    }
+
+    .front .front-page p {
+        color: rgb(233, 230, 230);
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
+        width: 100%;
+        font-size: large;
+    }
+
+    .front .front-page button {
+        margin-left: 40px;
+        margin-top: 25px;
+        padding: 5px;
+        font-size: medium;
+        font-weight: 600;
+        border-radius: 15%;
+        cursor: pointer;
+        color: rgb(7, 7, 99);
+    }
+
+    .front .front-page button:hover {
+        color: rgb(233, 60, 7);
+        background-color: rgb(31, 19, 19);
+        transition: 1s;
+
+    }
+
+    footer {
+        width: 100vw;
+        margin-top: 20px;
+        bottom: 0;
+        background: linear-gradient(to right, rgb(7, 7, 99), rgb(6, 1, 27),
+                rgb(7, 7, 99));
+        color: #fff;
+        padding: 20px 0 20px;
+        border-top-left-radius: 200px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    footer .row .col img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .row {
+        width: 100%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
