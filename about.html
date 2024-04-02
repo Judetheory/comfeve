@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comfeve Global Services Limited</title>
     <link rel="icon" href="/images/logo.svg" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+    />
     <script src="https://kit.fontawesome.com/1fe415b761.js"></script>
   </head>
   <body>
     <header>
-      
       <span class="logo">RC 1390879</span>
       <h1 class="name"><span>COMFEVE</span> GLOBAL SERVICES LIMITED</h1>
       <nav class="nav-links" id="navLinks">
@@ -23,7 +27,16 @@
       </nav>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </header>
-    <div></div>
+    <div class="about-front">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/welding.mp4" type="video/mp4" />
+      </video>
+      <div class="aim">
+        <div class="misvis"></div>
+        <div class="misvis"></div>
+        <div class="misvis"></div>
+      </div>
+    </div>
     <footer>
       <div class="row">
         <div class="col">
@@ -34,7 +47,10 @@
           </p>
         </div>
         <div class="col">
-          <h3>Office <div class="underline"><span></span></div></h3>
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
           <p>Plot 1 Beach Land Estate Road</p>
           <p>Phase 1, Lighter Terminal by Sunrise Bus Stop</p>
           <p>Off Oshodi Apapa Expressway</p>
@@ -43,7 +59,10 @@
           <p>+234(0) 818-0054-649</p>
         </div>
         <div class="col">
-          <h3 class="link">Links<div class="underline"><span></span></div></h3>
+          <h3 class="link">
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
           <ul>
             <li><a href="/home.html">Home</a></li>
             <li><a href="/services.html">Services</a></li>
@@ -53,11 +72,16 @@
           </ul>
         </div>
         <div class="col">
-          <h3>Newsletter<div class="underline"><span></span></div></h3>
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
           <form>
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Enter Your Mail" required>
-            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            <input type="email" placeholder="Enter Your Mail" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
           <div class="social-icons">
             <i class="fa-brands fa-facebook"></i>
@@ -67,11 +91,15 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <p class="copyright">
-        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd 
+        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd
       </p>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
