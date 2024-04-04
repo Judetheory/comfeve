@@ -24,22 +24,63 @@
     </header>
     <div class="contact-page">
       <h1 class="contact-us">CONTACT US</h1>
-      <hr>
+      <hr />
       <div class="contact">
         <div class="contact-form">
-          <form action="">
-            <input type="text" name="name" placeholder="Type your name" required class="contact-inputs">
-            <input type="email" name="email" placeholder="Enter your Email" required class="contact-inputs">
-            <input type="text" name="company" placeholder="Type your Company name" required class="contact-inputs">
-            <input type="number" name="phone" placeholder="Type your Mobile number" required class="contact-inputs">
-            <textarea name="message" placeholder="Type your message" required></textarea>
-            <button type="submit">SUBMIT <i class="fa fa-arrow-right"></i></button>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b697fc00-0335-47d0-8d85-e1053596848c">
+            <input
+              type="text"
+              name="name"
+              placeholder="Type your name"
+              required
+              class="contact-inputs"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              required
+              class="contact-inputs"
+            />
+            <input
+              type="text"
+              name="company"
+              placeholder="Type your Company name"
+              required
+              class="contact-inputs"
+            />
+            <input
+              type="number"
+              name="phone"
+              placeholder="Type your Mobile number"
+              required
+              class="contact-inputs"
+            />
+            <textarea
+              name="message"
+              placeholder="Type your message"
+              required
+            ></textarea>
+            <button type="submit">
+              SUBMIT <i class="fa fa-arrow-right"></i>
+            </button>
           </form>
         </div>
-        <div class="map"></div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8884.723767106027!2d3.3117707877389275!3d6.441821287716583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8974503a7591%3A0xd2489163edb4fa66!2sSunrise%20Bus%20Stop!5e0!3m2!1sen!2sng!4v1712239637792!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    </div>
-   
+
     <footer>
       <div class="row">
         <div class="col">
@@ -50,7 +91,10 @@
           </p>
         </div>
         <div class="col">
-          <h3>Office <div class="underline"><span></span></div></h3>
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
           <p>Plot 1 Beach Land Estate Road</p>
           <p>Phase 1, Lighter Terminal by Sunrise Bus Stop</p>
           <p>Off Oshodi Apapa Expressway</p>
@@ -59,7 +103,10 @@
           <p>+234(0) 818-0054-649</p>
         </div>
         <div class="col">
-          <h3 class="link">Links<div class="underline"><span></span></div></h3>
+          <h3 class="link">
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
           <ul>
             <li><a href="/home.html">Home</a></li>
             <li><a href="/services.html">Services</a></li>
@@ -69,11 +116,16 @@
           </ul>
         </div>
         <div class="col">
-          <h3>Newsletter<div class="underline"><span></span></div></h3>
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
           <form>
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Enter Your Mail" required>
-            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            <input type="email" placeholder="Enter Your Mail" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
           <div class="social-icons">
             <i class="fa-brands fa-facebook"></i>
@@ -83,9 +135,9 @@
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <p class="copyright">
-        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd 
+        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd
       </p>
     </footer>
     <script src="index.js"></script>
