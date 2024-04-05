@@ -169,6 +169,68 @@ color: rgb(7, 7, 99);}
    font-size: medium;
 list-style-position: inherit;
 list-style-type: none;}
+
+
+/*****CLIENT LOGO******/
+
+.client-head{
+    text-align: center;
+    color: rgb(7,7,99);
+    font-weight: 600;
+    padding: 10px 0 ;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.clients{
+    overflow: hidden;
+    padding: 50px 2px;
+    background-color: rgb(7, 7, 99);
+    white-space: nowrap;
+    border: 2px solid rgb(233, 60, 7);
+    border-radius: 10%;
+    position: relative;
+}
+.clients:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgb(7, 7, 99));
+    content: "";
+    z-index: 2;
+}
+
+.clients:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(7, 7, 99));
+    content: "";
+    z-index: 2;
+}
+.clients:hover .client-slide{
+    animation-play-state:running;
+}
+.client-slide{
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+.client-slide img {
+    height: 120px;
+    margin: 0 15px;
+    border-radius: 10%;
+    
+}
 /*****CONTACT PAGE*****/
 .contact-page .contact-us {
     text-align: center;
@@ -176,7 +238,7 @@ list-style-type: none;}
     padding: 15px;
 }
 
-.contact-form {
+.contact .contact-form {
     display: flex;
 }
 .contact-page{
@@ -184,7 +246,7 @@ list-style-type: none;}
 }
 .contact {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 form{
@@ -400,6 +462,11 @@ hr {
 /*****MEDIA Query for Home Page*****/
 
 @media (max-width: 1341px){
+    /**contact****/
+    .map iframe {
+            margin-right: 10px;
+            width: 520px
+        }
     .fa {
             display: none;
         }
@@ -474,6 +541,9 @@ hr {
 }
 
 @media (max-width: 929px) {
+    .map iframe {
+            width: 400px;
+        }
 
     .fa {
         display: none;
@@ -607,6 +677,10 @@ hr {
 
 }
 @media (max-width: 771px) {
+    .map iframe {
+           width: 250px;
+        }
+        
     header {
         display: flex;
         
@@ -769,12 +843,18 @@ hr {
 }
 
 @media (max-width: 546px){
+    .map iframe {
+            display: none;
+        }
     .misvis h3{font-size: x-small;}
     .misvis p {font-size: 10px;}
     .misvis ul{font-size: 10px;}
 }
 
 @media (max-width: 645px) {
+    .map iframe {
+            width: 170px;
+        }
     header {
         display: flex;
 
@@ -935,6 +1015,9 @@ hr {
 
 }
 @media (max-width: 480px) {
+    .map iframe {
+            display: none;
+        }
     header {
         display: flex;
 
@@ -1108,6 +1191,9 @@ hr {
 }
 
 @media (max-width: 380px){
+    .map iframe {
+            display: none;
+        }
     .misvis h3 {
             font-size: x-small;
         }
@@ -1123,4 +1209,44 @@ hr {
     .misvis{
         width: 100%;
     }
+
+        .contact-inputs {
+            margin: 15px;
+            padding: 15px;
+            border: 2px solid rgb(233, 230, 230);
+            width: 80%;
+            margin-left: 10px;
+            line-height: 20px;
+        }
+
+        textarea {
+                    margin: 15px;
+                    padding: 15px;
+                    border: 2px solid rgb(233, 230, 230);
+                    width: 80%;
+                    height: 120px;
+                    margin-left: 10px;
+                }
+        .contact .contact-form {
+            border: 2px solid rgb(233, 230, 230);
+            width: 90%;
+            margin-left: 15px;
+        }
+        .contact-form form button {
+            margin: 5px;
+            padding: 20px;
+            border: 2px solid rgb(233, 230, 230);
+            width: 80%;
+            margin-left: 5px;
+            color: rgb(233, 230, 230);
+            border-radius: 50%;
+            font-size: small;
+            font-weight: 600;
+        }
+        .contact-page .contact-us {
+            text-align: center;
+            color: rgb(233, 230, 230);
+            padding: 15px;
+            font-size: medium;
+        }
 }
