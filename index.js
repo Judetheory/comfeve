@@ -20,3 +20,6 @@ function hideMenu() {
 
 let copy = document.querySelector(".client-slide").cloneNode(true);
 document.querySelector(".clients").appendChild(copy);
+
+let copy1 = document.querySelector(".jobs-slide").cloneNode(true);
+document.querySelector(".jobs").appendChild(copy1);
