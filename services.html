@@ -5,80 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comfeve Global Services Limited</title>
     <link rel="icon" href="/images/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/1fe415b761.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B1PG96N9XN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B1PG96N9XN");
+    </script>
   </head>
   <body>
     <header>
-      
-      <span class="logo">RC 1390879</span>
+      <a href="services.html"><span class="logo">RC 1390879</span></a>
       <h1 class="name"><span>COMFEVE</span> GLOBAL SERVICES LIMITED</h1>
       <nav class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
-        <a href="home.html"><li>HOME</li></a>
+        <a href="index.html"><li>HOME</li></a>
         <a href="about.html"><li>ABOUT US</li></a>
         <a href="services.html"><li>SERVICES</li></a>
         <a href="contact.html"><li>CONTACT</li></a>
-        <a href="index.html"><li>CAREER</li></a>
       </nav>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </header>
-    <hr style="border: 1px solid rgb(7,7,69);">
+    <hr style="border: 1px solid rgb(7, 7, 69)" />
     <div class="service-container">
       <h2 class="heading-service" data-text="OUR SERVICES">OUR SERVICES</h2>
-      <hr style="border: 1px solid rgb(7,7,69); width: 100%;">
+      <hr style="border: 1px solid rgb(7, 7, 69); width: 100%" />
       <div class="row-service">
         <div class="service">
-          <img src="images/piping.jpg" alt="">
+          <img src="images/piping.jpg" alt="" />
           <h4>Process Piping and Mechanical Fabrication</h4>
         </div>
         <div class="service">
-          <img src="images/erection.jpg" alt="">
+          <img src="images/erection.jpg" alt="" />
           <h4>Tankfarm Construction API650 and Maintenance API653</h4>
         </div>
         <div class="service">
-          <img src="images/tf-cleaning.jpg" alt="">
+          <img src="images/tf-cleaning.jpg" alt="" />
           <h4>Tank Cleaning Services</h4>
         </div>
         <div class="service">
-          <img src="images/tf-calibration.jpg" alt="">
+          <img src="images/tf-calibration.jpg" alt="" />
           <h4>Tank Calibration and Integrity Test</h4>
         </div>
         <div class="service">
-          <img src="images/vessel.jpg" alt="">
+          <img src="images/vessel.jpg" alt="" />
           <h4>Marine, Offshore Vessel and Ship Maintenance</h4>
         </div>
         <div class="service">
-          <img src="images/Effluent.jpg" alt="">
+          <img src="images/Effluent.jpg" alt="" />
           <h4>Industrial Waste and Effluent Management</h4>
         </div>
         <div class="service">
-          <img src="images/decommision.jpg" alt="">
+          <img src="images/decommision.jpg" alt="" />
           <h4>Plant Decommissioning</h4>
         </div>
         <div class="service">
-          <img src="images/ows.jpg" alt="">
+          <img src="images/ows.jpg" alt="" />
           <h4>OWS Maintenance</h4>
         </div>
         <div class="service">
-          <img src="images/procurement.jpg" alt="">
+          <img src="images/procurement.jpg" alt="" />
           <h4>Engineering Procurement</h4>
         </div>
       </div>
 
-      <div class="jobs">
-      <div class="jobs-slide">
-        <img src="images/decommision.jpg" alt="" />
-        <img src="images/001.jpg" alt="" />
-        <img src="images/erection.jpg" alt="" />
-        <img src="images/007.jpg" alt="" />
-        <img src="images/003.jpg" alt="" />
-        <img src="images/006.jpg" alt="" />
-        <img src="images/002.jpg" alt="" />
-        <img src="images/004.jpg" alt="" />
+      <div class="slider-frame">
+        <div class="slide-images">
+          <div class="img-container">
+            <img src="images/workers1.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="images/workers.jpg" alt="" />
+          </div>
+          <div class="img-container">
+            <img src="images/tank_cleaning.jpg" alt="" />
+          </div>
+        </div>
       </div>
-    </div>
-
     </div>
     <footer>
       <div class="row">
@@ -90,7 +107,10 @@
           </p>
         </div>
         <div class="col">
-          <h3>Office <div class="underline"><span></span></div></h3>
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
           <p>Plot 1 Beach Land Estate Road</p>
           <p>Phase 1, Lighter Terminal by Sunrise Bus Stop</p>
           <p>Off Oshodi Apapa Expressway</p>
@@ -99,9 +119,12 @@
           <p>+234(0) 818-0054-649</p>
         </div>
         <div class="col">
-          <h3 class="link">Links<div class="underline"><span></span></div></h3>
+          <h3 class="link">
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
           <ul>
-            <li><a href="/home.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="/about.html">About Us</a></li>
             <li><a href="/index.html">Career</a></li>
@@ -109,23 +132,40 @@
           </ul>
         </div>
         <div class="col">
-          <h3>Newsletter<div class="underline"><span></span></div></h3>
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
           <form>
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Enter Your Mail" required>
-            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            <input type="email" placeholder="Enter Your Mail" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
           <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a
+              href="https://www.facebook.com/profile.php?id=61562616788986"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/comfeveglo" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://wa.me/2348180054649" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/comfeveglobalengineering/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
         </div>
       </div>
-      <hr>
+      <hr />
       <p class="copyright">
-        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd 
+        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd
       </p>
     </footer>
     <script src="index.js"></script>

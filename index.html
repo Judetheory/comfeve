@@ -5,25 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comfeve Global Services Limited</title>
     <link rel="icon" href="/images/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/1fe415b761.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B1PG96N9XN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-B1PG96N9XN");
+    </script>
   </head>
   <body>
     <header>
-      
-      <span class="logo">RC 1390879</span>
+      <a href="index.html"><span class="logo">RC 1390879</span></a>
       <h1 class="name"><span>COMFEVE</span> GLOBAL SERVICES LIMITED</h1>
       <nav class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
-        <a href="home.html"><li>HOME</li></a>
+        <a href="index.html"><li>HOME</li></a>
         <a href="about.html"><li>ABOUT US</li></a>
         <a href="services.html"><li>SERVICES</li></a>
         <a href="contact.html"><li>CONTACT</li></a>
-        <a href="index.html"><li>CAREER</li></a>
       </nav>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </header>
-    <div></div>
+    <div class="front">
+      <img src="images/home.jpg" alt="" />
+      <div class="front-page">
+        <h1><span class="auto-input"></span></h1>
+        <p>
+          "Welcome to the Home of Engineering Solutions, where precision meets
+          progress in every project. As a leading industrial engineering
+          company in the Oil and Gas Sector, we are dedicated to transforming blueprints into reality with
+          efficiency, innovation, and unwavering quality and safety. From
+          groundbreaking designs to seamless execution, we are committed to
+          shaping tomorrow's landscapes today. <br />
+          <br />
+          Explore our site to discover how we're redefining industry standards
+          and building a future of excellence, one project at a time."
+        </p>
+        <a href="services.html"><button>LEARN MORE</button></a>
+      </div>
+    </div>
+
+    <div class="slider-frame">
+      <div class="slide-images">
+        <div class="img-container">
+          <img src="images/cleaning.jpg" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="images/tankfarm const.jpg" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="images/site.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="row">
         <div class="col">
@@ -34,7 +83,10 @@
           </p>
         </div>
         <div class="col">
-          <h3>Office <div class="underline"><span></span></div></h3>
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
           <p>Plot 1 Beach Land Estate Road</p>
           <p>Phase 1, Lighter Terminal by Sunrise Bus Stop</p>
           <p>Off Oshodi Apapa Expressway</p>
@@ -43,35 +95,73 @@
           <p>+234(0) 818-0054-649</p>
         </div>
         <div class="col">
-          <h3 class="link">Links<div class="underline"><span></span></div></h3>
+          <h3 class="link">
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
           <ul>
-            <li><a href="/home.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="/about.html">About Us</a></li>
-            <li><a href="/index.html">Career</a></li>
             <li><a href="/contact.html">Contacts</a></li>
           </ul>
         </div>
         <div class="col">
-          <h3>Newsletter<div class="underline"><span></span></div></h3>
+          <h3>
+            Newsletter
+            <div class="underline"><span></span></div>
+          </h3>
           <form>
             <i class="far fa-envelope"></i>
-            <input type="email" placeholder="Enter Your Mail" required>
-            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            <input type="email" placeholder="Enter Your Mail" required />
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </form>
+        </div>
+        <div class="col">
           <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a
+              href="https://www.facebook.com/profile.php?id=61562616788986"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/comfeveglo" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://wa.me/2348180054649" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/comfeveglobalengineering/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
         </div>
+        
       </div>
-      <hr>
+      <hr />
       <p class="copyright">
-        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd 
+        &copy; copyright <span id="curyr"></span> Comfeve Global Service Ltd
       </p>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: [
+          "WELCOME TO COMFEVE",
+          "THE HOME OF WORLD CLASS ENGINEERING SOLUTIONS...",
+        ],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
