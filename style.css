@@ -1691,13 +1691,21 @@ hr {
     .map iframe {
             display: block;
             width: 100%;
-            height: 250px;
+            height: 350px;
             margin-top: 10px;
         }
     
         .contact {
             flex-direction: column;
         }
+
+         .contact .contact-form input {
+                    width: 250px;
+                }
+        
+        .contact .contact-form textarea {
+                    width: 250px;
+                }
     header {
         display: flex;
 
@@ -1745,7 +1753,7 @@ hr {
     }
 
     .front {
-        height: 90vh;
+        height: 95vh;
         width: 100vw;
         margin-top: 20px;
         background-color: rgb(7, 7, 99);
@@ -1754,7 +1762,7 @@ hr {
         justify-content: center;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        border-bottom-left-radius: 180px;
+        border-bottom-left-radius: 40px;
         text-align: center;
     }
 
@@ -1810,10 +1818,10 @@ hr {
     .about-front .aim {
             display: flex;
             flex-direction: column;
-            height: 80%;
+            height: 85%;
         }
         .about-front .aim .misvis{
-            height: 500px;
+            height: 520px;
             opacity: 0.8;
         }
   .misvis h3 {
